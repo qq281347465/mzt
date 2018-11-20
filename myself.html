@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		header{height: 150px;background:orange;}
+	</style>
+	<body>
+		<header>
+			<a class="mui-icon mui-icon-chat mui-text-right fr pltr10 white" style="font-size:1.5em; " ></a>
+			<div class="mui-text-left">
+				<div class=" mui-icon mui-icon-contact white pltl20" style="font-size:5em;"></div>
+				<a class="f28 white" href="login.html" id="login"></a>
+			</div>
+		</header>
+		<section>
+			<ul class="mui-table-view">
+			        <li class="mui-table-view-cell">
+			            <a href="#" class="mui-navigate-right">
+			           	     我的订单<span class="fr pr20 hui f16">查看更多订单</span>
+			            </a>
+			        </li>
+			  </ul>
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			    <a href="#">
+			     <span class="mui-icon-extra mui-icon-extra-gold pb5" style="font-size: 2.5em;"></span> 
+			     <div class="mui-media-body">待付款</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			    <a href="#">
+			        <span class="mui-icon-extra mui-icon-extra-express pb5" style="font-size: 2.5em;"></span>
+			        <div class="mui-media-body">待发/收货</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3  mui-col-sm-3">
+			    <a href="#">
+			        <span class="mui-icon-extra mui-icon-extra-heart pb5" style="font-size: 2.5em;"></span>
+			        <div class="mui-media-body">待评价</div>
+			    </a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			    <a href="#">
+			        <span class="mui-icon mui-icon-location pb5" style="font-size: 2.5em;"></span>
+			        <div class="mui-media-body">退换/退款</div>
+			    </a>
+			</li>
+			    </ul>
+			    <div class="mui-content"><img src="images/myself.jpg" width="100%"/></div>
+			<ul class="mui-table-view">
+			        <li class="mui-table-view-cell">
+			            <a href="#" class="mui-navigate-right"href="#">
+			                <span class="mui-icon-extra mui-icon-extra-gift pr10 red" ></span>
+			                	优惠券
+			            </a>
+			        </li>
+			        <li class="mui-table-view-cell"href="#">
+			            <a class="mui-navigate-right">
+			            	<span class="mui-icon-extra mui-icon-extra-like pr10 bule"></span>
+			                 	会员特权
+			            </a>
+			        </li>
+			        <li class="mui-table-view-cell"href="#">
+			            <a class="mui-navigate-right" href="#">
+			            	<span class="mui-icon-extra mui-icon-extra-prech pr10 yellow"></span>
+			            		我的钱包
+			            </a>
+			        </li>
+			    </ul>
+			    <br />
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell"href="#">
+			            <a href="setting.html" class="mui-navigate-right">
+			                <span class="mui-icon mui-icon-gear pr10"></span>
+			                	设置
+			            </a>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <a href="gs.html" class="mui-navigate-right">
+			                <span class="mui-icon-extra mui-icon-extra-peoples pr10 bule"></span>
+			                	关于我们
+			            </a>
+			        </li>   
+		</section>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function () {
+			    var name=localStorage.getItem("name");
+			    if(name==undefined){
+			    	 document.getElementById("login").innerHTML="登录/注册";
+			    }else{
+			    	document.getElementById("login").innerHTML=name;
+			    	
+			    }
+			})
+			
+		</script>
+	</body>
+		
+</html>
